@@ -17,31 +17,47 @@ html {
     padding: 1rem;
   }
 
+  .koulunlogo {
+    /*text-align: right;*/
+  }
+
   figure > * {
-    flex: auto;
-    max-width: 30%;
+    width: 100px;
+    float: right;
+    margin-top: -2rem;
   }
 
   p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.8rem;
   }
 
   .ohjelmointi {  /*lisää linkit tehtäviin https://learn.co/lessons/html-links*/
     padding: 0.5rem;
     margin: 0.1rem;
     background-color: white;
+    font-size: 1rem;
   }
 
   section {
     padding: 0.5rem;
     margin: 0.1rem;
     background-color: white;
+    margin: 0.1rem;
   }
 
-  footer {
-    font-size: 0.5rem;
+  .footerp {
+    font-size: 1rem;
     color: white;  /*tekstin väri*/
     padding: 1rem;
     background-color: #69023B;
     border-radius: 0 0 10px 10px;
   }
+
