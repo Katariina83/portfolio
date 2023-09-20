@@ -3,6 +3,7 @@
  * Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  */
+
 :root {
 
   --bs-primary-rgb: 225, 173, 1; /*This is the nav color*/
@@ -21,6 +22,10 @@
 
 body {
   background-color: var(--bs-body-bg);
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 section.resume-section {
@@ -53,16 +58,6 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 p {
   margin-top: 1.3rem;
   margin-bottom: 1rem;
-}
-
-/*Project-section*/
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-.col {
-  flex: 1 0 0%;
 }
 
 .btn {
@@ -126,22 +121,7 @@ p {
 }
 
 
-/*Card button*/
-.btn-outline-secondary {
-  --bs-btn-color: #6c757d;
-  font-weight: bold;
-  --bs-btn-border-color: #cc5803;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #cc5803;
-  --bs-btn-hover-border-color: #cc5803;;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #6c757d;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #6c757d;
-  --bs-gradient: none;
-}
-
-
+/*-----NAV-BAR RULES STARTS-------*/
 /*NAVBAR COLLAPSE*/
 .collapse:not(.show) {
   display: none;
@@ -158,6 +138,7 @@ p {
   height: auto;
   transition: width 0.35s ease;
 }
+
 .nav-link {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
@@ -177,24 +158,6 @@ p {
   cursor: default;
 }
 
-.navbar {
-  --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-brand-padding-y: 0.3125rem;
-  --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-toggler-border-radius: 0.375rem;
-  --bs-navbar-toggler-focus-width: 0.25rem;
-  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-}
-
-
 
 .navbar > .container,
 .navbar > .container-fluid,
@@ -209,7 +172,6 @@ p {
   justify-content: space-between;
 }
 
-/*Top navbar*/
 .navbar-brand {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
@@ -259,7 +221,7 @@ p {
   transition: var(--bs-navbar-toggler-transition);
 }
 
-/*Hamburger icon (toggler)*/
+/*Hamburger icon (toggler):*/
 .navbar-toggler:hover {
   cursor: pointer;
   text-decoration: none;
@@ -273,60 +235,50 @@ p {
   box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
 }
 
-.navbar-toggler-icon {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  background-image: var(--bs-navbar-toggler-icon-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+/*--------NAV-BAR RULES END----------*/
+
+/*--------SKILLS SECTION RULES START--------*/
+
+.col-container {
+  margin: 0;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
 }
 
-.navbar-dark {
-  --bs-navbar-color: rgba(255, 255, 255, 0.55);
-  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
-  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
-  --bs-navbar-active-color: #fff;
-  --bs-navbar-brand-color: #fff;
-  --bs-navbar-brand-hover-color: #fff;
-  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.col {
+  background-color: #6c757d;
+  color: white;
+  font-size: 0.9rem;
+  border: solid;
 }
 
-/*--------PROJECT SECTION STARTS: ----------*/
-/* .card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  height: var(--bs-card-height);
-  background-clip: border-box;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius);
+.fa-ul {
+  margin: 1rem 0rem 0rem 2rem;
 }
 
-.card > .list-group {
-  border-top: inherit;
-  border-bottom: inherit;
+/*--------SKILLS SECTION RULES END --------*/
+
+/*--------PROJECT SECTION RULES STARTS: ----------*/
+
+.card {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
-.card h4 {
-  margin-top: 1.5rem;
+/*Card button*/
+.btn-outline-secondary {
+  --bs-btn-color: #6c757d;
+  font-weight: bold;
+  --bs-btn-border-color: #cc5803;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #cc5803;
+  --bs-btn-hover-border-color: #cc5803;;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
 }
-/* .card-body {
-  flex: 1 1 auto;
-  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
-} */
-
-/* .card-title {
-  margin-bottom: var(--bs-card-title-spacer-y);
-}
-
-.card-img {
-  position: relative;
-} */
-
 
 /*Buttons*/
 
@@ -451,29 +403,6 @@ p {
   font-style: normal !important;
 }
 
-/* rtl:end:remove */
-.text-primary {
-  --bs-text-opacity: 1;
-  color: rgb(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-}
-
-.pe-none {
-  pointer-events: none !important;
-}
-
-.pe-auto {
-  pointer-events: auto !important;
-}
 
 /*Navigation*/
 .rounded-circle {
@@ -493,19 +422,6 @@ body {
   color: #6c757d;
 }
 
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  text-transform: uppercase;
-}
 
 h1, .h1 {
   line-height: 1;
@@ -580,7 +496,8 @@ p.lead {
 } */
 
 /* -------MEDIA QUERIES START---------*/
-@media (min-width: 576px) {
+
+@media (min-width: 768px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
   }
@@ -641,93 +558,6 @@ p.lead {
       overflow-y: visible;
     }
 
-    /*PROJECT-SECTION RULES START*/
-    /*PROJECT-SECTION RULES END*/
-
-    /* .shadow-sm {
-      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-    }
-
-    .sticky-sm-top {
-      position: sticky;
-      top: 0;
-      z-index: 1020;
-    }
-    .sticky-sm-bottom {
-      position: sticky;
-      bottom: 0;
-      z-index: 1020;
-    }  
-    .float-sm-start {
-      float: left !important;
-    }
-    .float-sm-end {
-      float: right !important;
-    }
-    .float-sm-none {
-      float: none !important;
-    }
-
-    .justify-content-sm-between {
-      justify-content: space-between !important;
-    }
-
- 
-    .align-items-sm-center {
-      align-items: center !important;
-    }
-
-    .m-sm-0 {
-      margin: 0 !important;
-    }
-
-    .mx-sm-0 {
-      margin-right: 0 !important;
-      margin-left: 0 !important;
-    }
-
-    .mx-sm-auto {
-      margin-right: auto !important;
-      margin-left: auto !important;
-    }
-    .my-sm-0 {
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-    }
-
-    .p-sm-0 {
-      padding: 0 !important;
-    }
-
-    .pt-sm-0 {
-      padding-top: 0 !important;
-    }
-    .pt-sm-1 {
-      padding-top: 0.25rem !important;
-    }
-    .pt-sm-2 {
-      padding-top: 0.5rem !important;
-    }
-    .pt-sm-3 {
-      padding-top: 1rem !important;
-    }
-    .pt-sm-4 {
-      padding-top: 1.5rem !important;
-    }
-    .pt-sm-5 {
-      padding-top: 3rem !important;
-    }
-
-    .text-sm-start {
-      text-align: left !important;
-    }
-    .text-sm-end {
-      text-align: right !important;
-    }
-    .text-sm-center {
-      text-align: center !important;
-    } */
-
   .container-sm, .container {
     max-width: 540px;
   }
@@ -738,13 +568,29 @@ p.lead {
   }
   
 
-  /*Projects-section start*/
+/*--------PROJECT SECTION RULES STARTS: ----------*/
 
-    /* .row-cols-md-2 > * {
-      flex: 0 0 auto;
-      width: 50%;
-      
-    } */
+.card {
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flexbox;
+  max-width: 50%;
+}
+
+/*Card button*/
+.btn-outline-secondary {
+  --bs-btn-color: #6c757d;
+  font-weight: bold;
+  --bs-btn-border-color: #cc5803;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #cc5803;
+  --bs-btn-hover-border-color: #cc5803;;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
 
   /*Projects-section ends*/
 
